@@ -1,0 +1,103 @@
+
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia"> <!--agrego fuente-->
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Handlee">
+
+		<meta charset="utf-8">
+		<meta name="author" content="Melisa Mendez">
+		<meta name="description" content="Esta es mi primer pagina web">
+		<meta name="keyword" content="curriculum vitae, cv_resumen">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		
+		<link rel="stylesheet" href="css/estilos.css"> 
+		<title>Inicio</title>
+		<link rel="shortcut icon" href="img/limon_img_title.jpg">
+	</head>
+	<body>
+		<header>
+			<h1>Bienvenido a nuestra p&aacute;gina</h1>
+		</header>
+		<nav>
+			<ul>
+				<li><a href="inicio.html">Inicio</a></li>
+				<li><a href="tabla.html">Tabla</a></li>
+				<li><a href="cv_resumen.html">CV Resumen</a></li>
+			</ul>
+		</nav>
+
+	<div class="cuerpo_formu">	
+		<div class="login">
+			<h2>INICIAR SESI&Oacute;N</h2>
+			<br>
+
+			<form action="#" method="GET">
+
+				<label for="usuario">Usuario </label>
+				<input type="text" id="usuario" placeholder="Usuario o correo electr&oacute;nico"><br><br>
+
+				<label for="password">Contraseña </label>
+				<input type="password" id="password" placeholder="Respetar Mayúsculas" minlength="8" maxlength="16"><br><br>
+				<a href="#"><i>He olvidado mi contraseña<i></a><br><br>
+		
+				<input type="submit" id="inicio_sesion" value="Iniciar sesi&oacute;n">			
+				<br><br>
+			</form>
+		</div> <!--fin login-->	
+		<br>
+		<div class="registro">
+			<br>
+			<h3>¿No tiene una cuenta? Reg&iacute;strese</h3>
+			<br>
+
+			<form action="#" method="GET">
+				
+			<div class="contenido_form">
+				<label for="nombre_usuario">Nombre de usuario </label>
+				<input type="text" id="nombre_usuario" placeholder="Máximo 30 caracteres." maxlength="30"><br><br>
+
+				<label for="nombre">Nombre </label>
+				<input type="text" id="nombre" placeholder="Nombre completo"><br><br>
+				
+				<label for="apellido">Apellido </label>
+				<input type="text" id="apellido" placeholder="Apellido completo"><br><br>
+				
+				<label for="email">Email </label>
+				<input type="email" id="email" placeholder="usuario@dominio.com"><br><br>
+				
+				<label for="contraseña1">Contraseña </label>
+				<input type="password" id="contraseña1" placeholder="Su contraseña" minlength="8" maxlength="16"><br>
+				<label for= class="contraseña1" id="contraseña1_texto"><i>Debe contener entre 8 y 16 caracteres, al menos una may&uacute;scula, un n&uacute;mero y un caracter especial.</i></label><br><br>
+
+				<label for="contraseña2">Repetir constraseña </label>
+				<input type="password" id="contraseña2" placeholder="Su contraseña" minlength="8" maxlength="16"><br><br>
+				
+				<label for="sexo">Sexo </label>
+				<select id="sexo">
+					<option value="f">Femenino</option>
+					<option value="m">Masculino</option>
+					<option value="o">Otros</option>
+				</select><br><br>
+				
+				<label for="color_fav">Color favorito </label>
+				<input type="Color" id="color_fav"><br><br>
+
+				<label for="fecha">Fecha de nacimiento </label>
+				<input type="date" id="fecha"><br><br>
+				
+			</div>	
+
+			<div class="robot">
+				<input type="checkbox" id="robot">
+				<label for="robot">No soy un robot </label><br><br>
+			</div>	
+				<input type="submit" id="enviar" value="Regístrese"><br><br>
+			</form>
+
+		</div><!--fin registro-->	
+	</div> <!--fin cuerpo formu-->	
+
+	</body>
+</html>
