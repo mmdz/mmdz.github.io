@@ -1,0 +1,338 @@
+/*hoja de estilos para todas las páginas*/
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing:border-box;
+
+}
+
+body{
+	font-family: handlee, Verdana, Arial,Tahoma,sans-serif;
+	/*, Tahoma, Helvética, Arial, Verdana, sans-serif;*/
+	text-align: center;
+	background-image: url("../img/fondo2.png");
+}
+
+header{
+	width: 100%; /*el ancho que ocupa*/
+	padding: 1em; /*separa entre elementos, puede hacerlo por un lado en particular*/
+	color: #512E5F;#0E6251;#9E113B;#6C0927;
+	background: #A3E4D7;#71FCE0; #B0FDF6;
+	font-size: 1.5em;
+}
+
+nav ul{
+	list-style: none; /*le quita las viñetas*/
+	background: #1F618D;#003245;
+	text-align: center;
+}
+
+nav ul li{
+	display: inline-block; /*q esten uno al lado del otro*/
+	padding: 0.4em;	
+	padding-left: 2em;
+	padding-right: 2em;
+	transition: all ease-in-out 500ms;/*cuanto tarda en cambiar*/
+}
+
+ul li a{ /*A maneja el link en si*/
+	color: #D4E6F1;red;white;
+	text-decoration:none; /*le quito el subrayado*/
+	font-size: 1.3em;
+}
+
+nav ul li:hover{ /*cuando paso x arriba cambia el color*/
+	color: blue;
+	background: #D4E6F1;#EAF2F8;	
+}
+
+h2{
+	display: inline-block;
+	position: relative;
+	padding: 5px; 
+}
+
+/*******************************************/
+
+/**estilos de formulario y login [pag_inicio]***/
+.cuerpo_formu{
+	padding-top: 1%;
+	padding-right: 25%;
+	padding-left: 30%;
+}
+
+.login{
+	width: 33em;
+	margin-top: 3%;
+	margin-right: 15%;
+	margin-left: 15%;
+	border: 2px solid grey;
+	background-color: #EBF5FB;#F4ECF7;#EBF5FB;#EAFAF1;#ABEBC6;#E9F7EF;
+	border-radius: 0.2em;
+	font-size: 0.9em;
+}
+
+.login h2{
+	padding: 1em;
+	color: #512E5F;#0E6251;
+}
+
+.login input{
+	border-radius: 0.2em;
+	padding: 1%;
+	/*width: 70%;*/
+	font-family: handlee, sans-serif;
+}
+
+.login label{
+	text-align: left;
+	padding-right: 1%;
+	margin-left: 1%;
+	font-size: 1.5em;
+}
+
+.login input:hover{
+	border-color: #633974;#FEF9E7;
+}
+
+.registro input:hover{
+	border-color: #FEF9E7;
+}
+
+.login a{ /*olvide contraseña*/
+	padding: 0.5%;
+	text-decoration: none;
+	color: cornflowerblue;
+}
+.login a:hover{
+	color: darkblue;
+
+}
+
+#enviar:hover, #inicio_sesion:hover{
+	background: #1F618D;#633974;
+	border-color: transparent;
+	color: #F4ECF7;
+}
+
+#sexo, #fecha{ 			/*boton desplegable*/
+	width: auto;
+	padding: 0.3em;
+}
+
+#enviar, #inicio_sesion{
+	padding: 0.5em;
+	font-style: bold;
+	font-size: 1em;
+}
+
+.registro input{
+	border-radius: 0.2em ;
+	padding: 1%;
+	font-family: handlee, sans-serif;
+}
+
+.registro label{
+	font-size: 1.3em;
+}
+
+.registro{
+	width: 30em;
+	text-align: justify-all;
+	margin-right: 15%;
+	margin-left: 15%;
+	margin-bottom: 4%;
+	border: 2px solid grey;
+	background: #EBF5FB;
+	border-top: 10%;
+	border-bottom: 40%;
+	border-radius: 0.2em;
+
+}
+
+.registro h3{
+	font-size: 1.8em;
+	color: #512E5F;
+}
+
+.contenido_form{
+	
+	margin-right: 3%;
+	margin-left: 3%;
+	font-style: normal;
+}
+
+.contraseña1{
+	/*font-size: 1em;*/
+	/*color: cornflowerblue;*/
+}
+#contraseña1_texto{
+	font-family: handlee, sans-serif;
+	color: cornflowerblue;
+	font-size: 0.9em;
+	/*width: 50%;*/
+}
+
+.robot{
+	color: cornflowerblue;
+}
+
+.robot:hover{
+	color: darkblue;
+}
+
+
+
+/********************************************************************/
+/***Estilos de tabla (Actividad: caso práctico mod.2)******************/
+
+#titulo_tabla{
+	
+	width: 70%; /*el ancho que ocupa*/
+	margin-top: 1%;
+	font-style: italic;
+
+	padding-bottom: 3%; /*separa entre elementos, puede hacerlo por un lado en particular*/
+	padding-top: 3%;
+	color: #48C9B0;#512E5F;
+
+	border-bottom: #48C9B0 solid 0.08em;
+	text-decoration-style: inherit;
+}
+
+.estilos_tabla{
+	box-sizing: border-box; /*hasta el borde*/
+	font-family: Verdana, Tahoma,sans-serif,Arial;
+	margin-top: 10%;
+	width: 45%;
+	margin-left: 25%;
+	margin-right: 25%;
+	border-collapse: collapse;
+}
+
+td,th,table {
+	padding: 1.3%;
+	border: 0.09em solid black;
+}
+
+.fila_clara{
+	background: #A6BFD2;
+}
+
+.fila_oscura{
+	background: #38739E;
+}
+
+.fila_naranja{
+	background: #F4893A;
+}
+
+/********************************************************///
+/**************Estilos CV REsumen****************************/
+
+
+/*.encabezado_cv{
+	display: inline-block;/*que este en linea y ocupe el espacio disponible*/
+	/*position: absolute;*
+	padding: 5px;
+	background: red;
+	border-color: hotpink;
+	width: 100%;
+	/*border-bottom: black; double 3em;*/
+	/*text-decoration-style: double;*/
+	/*text-decoration: blink;*
+	border-bottom: darkblue  solid 0.1em;
+	/*padding-bottom: 40%;*/
+}
+
+.encabezado_cv h2{
+	width: 70%; /*el ancho que ocupa*/
+	margin-top: 1%;
+	font-style: italic;
+
+	padding-bottom: 3%; /*separa entre elementos, puede hacerlo por un lado en particular*/
+	padding-top: 3%;
+	color: #48C9B0;#512E5F;
+
+	border-bottom: #48C9B0 solid 0.08em;
+	text-decoration-style: inherit;
+}
+
+/*.encabezado_cv h2{
+	width: 100%;
+	padding-top: 1em;
+	background: red;
+	border-color: hotpink;
+}
+
+.encabezado_cv h3{
+	/*text-align: justify-all;*
+	width: 100%;
+	margin-bottom: 2%;
+	/*text-decoration-line: underline;*
+	margin-top: 2%;
+	background: yellow;
+	border-color: hotpink;
+	border-bottom: darkblue  solid 0.1em;
+}
+*/
+
+.cuerpo_cv{
+	align: center;
+	margin-right: 1%;
+	margin-left: 1%;
+}
+
+.grilla{
+	display: grid; /*la forma de acomodar el espacio*/
+	/*grid-template-columns: % 40%; /*lo arma en columnas*/ 
+	grid-template-rows: 33% 33% 33%; /*armo filas*/
+	gap: 1em; /*espacio mininmo entre colum*/
+	margin-right: 5%;
+	margin-left: 5%;
+	grid-auto-rows: auto;
+	grid-auto-columns: auto;
+
+}
+
+.grilla p{
+	width: 90%;
+	box-sizing: content-box;
+	/*margin: 0.1em;*/
+	/*position: fixed;*/
+	padding: 1%;
+
+}
+.borde_grilla{
+	margin-top: 10%;
+	margin-left: 10%;
+	margin-right: 10%;
+	border: 1px;
+	border-radius: 1em;
+	border-style: solid;
+	/*box-sizing: border-box;*/
+
+}
+
+.borde_grilla div: hover{  
+	border-radius: 1em;
+	background: #1F618D;#633974;
+	border-color: transparent;
+	color: #F4ECF7;
+}
+
+.grilla li{
+	list-style: none;
+}
+
+.borde_grilla h3{
+	width: 50%;
+	margin: 50%;
+	color: blueviolet;
+	/*padding: 100%;*/
+	/*border-collapse: collapse;*/
+	/*box-sizing: border-box;*/
+	column-rule:3px dotted gray;
+
+}
