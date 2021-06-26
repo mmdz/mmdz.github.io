@@ -27,7 +27,9 @@ nav ul{
 	background: #1F618D;#003245;
 	text-align: center;
 }
-
+nav ul li a:hover{
+	color:#1F618D;
+}
 nav ul li{
 	display: inline-block; /*q esten uno al lado del otro*/
 	padding: 0.4em;	
